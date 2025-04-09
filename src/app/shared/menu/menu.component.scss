@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 !important;
+}
+
+.mdc-list-item:focus::before {
+    opacity: 0 !important;
+}
+
+.active-list-item {
+    font-weight: bold;
+}
+
+mat-nav-list {
+    min-width: 200px;
+}
