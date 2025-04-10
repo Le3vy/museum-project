@@ -6,7 +6,7 @@
 
 
 /* Light Theme */
-:root, :host {
+.light {
   @include mat.theme-overrides((
     primary: #7f5629,
     on-primary: #ffffff,
@@ -64,6 +64,71 @@
     inverse-secondary: #eac078,
     inverse-tertiary: #c5cc8b,
   ));
+  .login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+    h1 {
+      margin-bottom: 20px;
+      color: #7F5629;
+    }
+  }
+
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    
+    h2 {
+      margin-bottom: 20px;
+      color: #7F5629;
+    }
+    
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .menu{
+    a {
+      mat-icon,span{
+        color:#7F5629;
+      }
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 0 !important;
+    }
+    .active-list-item {
+      mat-icon,span{
+        background-color: #7F5629;
+        color:#ffffff;
+      }
+      background-color: #7F5629;
+      font-weight: bold;
+    }
+  }
+  .sidenav-container{
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 25px;
+    }
+  
+    mat-toolbar{
+      background-color: #7F5629;
+      color: #ffffff;
+      mat-icon {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 /* Dark Theme */
@@ -125,4 +190,69 @@
     inverse-secondary: #78591b,
     inverse-tertiary: #5c622c,
   ));
+  .login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  
+    h1 {
+      margin-bottom: 20px;
+      color: #f3bc87;
+    }
+  }
+
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    
+    h2 {
+      margin-bottom: 20px;
+      color: #f3bc87;
+    }
+    
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+  .menu{
+    a {
+      mat-icon,span{
+        color:#f3bc87;
+      }
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 0 !important;
+    }
+    .active-list-item {
+      mat-icon,span{
+        background-color: #F3BC87;
+        color:#49320E;
+      }
+      background-color: #F3BC87;
+      font-weight: bold;
+    }
+  }
+  
+  .sidenav-container{
+    a {
+      text-decoration: none;
+      color: #49320E;
+      font-size: 25px;
+    }
+  
+    mat-toolbar{
+      background-color: #F3BC87;
+      color: #49320E;
+      mat-icon {
+        color: #49320E;
+      }
+    }
+  }
 }

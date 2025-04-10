@@ -13,14 +13,12 @@ ul {
     gap: 30px;
 }
 
-a {
-    text-decoration: none;
-    font-size: 25px;
-}
+
 
 mat-sidenav-container {
     height: 100%;
 }
+
 
 
 mat-sidenav {
@@ -39,4 +37,12 @@ mat-sidenav {
     nav ul {
         display: none;
     }
+}
+
+.menu-logo{
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    height: 60%; 
+    width: auto;
 }
