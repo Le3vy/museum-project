@@ -1,6 +1,6 @@
 import { Exhibition, exhibitions} from "./Exhibition";
 
-export type TicketType = 'Normál' | 'Diák' | 'Napi Bérlet' | 'Napi Jegy';
+export type TicketType = 'Normal' | 'Student' | 'Daily Pass' | 'Daily Ticket';
 
 export interface Ticket {
   id: number;
@@ -14,7 +14,7 @@ export interface Ticket {
 export const tickets: Ticket[] = [
   {
     id: 1,
-    type: 'Normál',
+    type: 'Normal',
     price: 3000,
     includesAllExhibitions: false,
     validForSpecificExhibition: exhibitions[0],
@@ -22,7 +22,7 @@ export const tickets: Ticket[] = [
   },
   {
     id: 2,
-    type: 'Diák',
+    type: 'Student',
     price: 1500,
     includesAllExhibitions: false,
     validForSpecificExhibition: exhibitions[1],
@@ -30,14 +30,14 @@ export const tickets: Ticket[] = [
   },
   {
     id: 3,
-    type: 'Napi Bérlet',
+    type: 'Daily Pass',
     price: 5000,
     includesAllExhibitions: true,
     validForMuseum: true
   },
   {
     id: 4,
-    type: 'Napi Jegy',
+    type: 'Daily Ticket',
     price: 3500,
     includesAllExhibitions: true,
     validForMuseum: true

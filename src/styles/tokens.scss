@@ -233,6 +233,53 @@
     }
   }
   
+  .ticket-purchase-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #f1edeb;
+
+    h1 {
+      margin-bottom: 30px;
+      color: #7F5629;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #7F5629;
+      }
+
+      select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid #7F5629;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 18px;
+        background-color: #7F5629;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #643e14;
+        }
+      }
+    }
+  }
 }
 
 /* Dark Theme */
@@ -468,4 +515,69 @@
     }
   }
   
+  .ticket-purchase-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #49320E;
+
+    h1 {
+      margin-bottom: 30px;
+      color: #F3BC87;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #F3BC87;
+      }
+
+      select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: 1px solid #F3BC87;
+        background-color: #5E4203;
+        color: white;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px;
+        font-size: 18px;
+        background-color: #F3BC87;
+        color: #49320E;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #EAC078;
+        }
+      }
+    }
+
+    .confirmation-message {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #5E4203;
+      border-radius: 10px;
+      color: #F3BC87;
+      
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 }

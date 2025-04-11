@@ -1,1 +1,31 @@
-<p>ticket-purchase works!</p>
+<div class="ticket-purchase-container">
+    <h1>Buy Your Ticket</h1>
+
+    <form (submit)="purchaseTicket()">
+        <label for="exhibition">Choose an Exhibition:</label>
+        <select id="exhibition" name="exhibition" [(ngModel)]="selectedExhibition">
+            @for (exhibition of exhibitions; track exhibition.id) {
+                <option [value]="exhibition.id">{{ exhibition.name }}</option>
+            }
+        </select>
+    
+        <label for="ticket">Choose Ticket Type:</label>
+        <select id="ticket" name="ticket" [(ngModel)]="selectedTicket">
+            @for (ticket of tickets; track ticket.id) {
+                <option [value]="ticket.id">{{ ticket.type }} - ${{ ticket.price }}</option>
+            }
+        </select>
+    
+        <button type="submit">Purchase</button>
+    </form>
+    
+
+    @if (purchaseConfirmation) {
+        <div class="confirmation-message">
+            <h2>Purchase Successful!</h2>
+            <p><strong>Ticket Type:</strong> {{ selectedTicketDetails?.type }}</p>
+            <p><strong>Exhibition:</strong> {{ selectedExhibitionDetails?.name }}</p>
+            <p><strong>Price:</strong> ${{ selectedTicketDetails?.price }}</p>
+        </div>
+    }
+</div>

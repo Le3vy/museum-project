@@ -10,7 +10,7 @@
             <div class="purchase-list">
                 @for (purchase of purchases; track purchase.id) {
                     <div class="purchase-card">
-                        <h3>{{ purchase.ticket.type }} Ticket</h3>
+                        <h3>{{ purchase.ticket.type }}</h3>
                         <p><strong>Date:</strong> {{ purchase.date | dateFormatter }}</p>
                         <p><strong>Price:</strong> ${{ purchase.ticket.price }}</p>
                     </div>
