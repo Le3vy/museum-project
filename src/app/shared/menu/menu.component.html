@@ -1,4 +1,8 @@
-<mat-nav-list class="menu">
+  <mat-nav-list class="menu">
+    <a mat-list-item (click)="switchtheme(); closeMenu()">
+      <mat-icon matListItemIcon>lightbulb</mat-icon>
+      <span matListItemTitle>Theme</span>
+    </a>
     <a mat-list-item routerLink="/home" routerLinkActive="active-list-item" (click)="closeMenu()">
       <mat-icon matListItemIcon>home</mat-icon>
       <span matListItemTitle>Home</span>

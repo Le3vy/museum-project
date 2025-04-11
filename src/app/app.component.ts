@@ -23,8 +23,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  title = 'learnflow';
+  title = 'museum-project';
   isLoggedIn = false;
+  theme = 'light';
 
   constructor() {}
 
@@ -44,5 +45,11 @@ export class AppComponent implements OnInit {
 
   onToggleSidenav(sidenav: MatSidenav){
     sidenav.toggle();
+  }
+
+  switchtheme(): void {
+    this.theme = this.theme === 'light' ? 'dark' : 'light';
+    document.body.classList.remove('light', 'dark');
+    document.body.classList.add(this.theme);
   }
 }
