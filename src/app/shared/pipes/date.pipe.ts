@@ -5,13 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true
 })
 export class DateFormatterPipe implements PipeTransform {
-  transform(value: string): string {
+  transform(value: string | Date): string {
     if (!value) return '';
 
     try {
-      const date = new Date(value);
+      const date = value instanceof Date ? value : new Date(value);
       if (isNaN(date.getTime())) {
-        return value;
+        return value.toString();
       }
       
       const year = date.getFullYear();
@@ -20,7 +20,7 @@ export class DateFormatterPipe implements PipeTransform {
       
       return `${year}-${month}-${day}`;
     } catch (error) {
-      return value;
+      return value.toString();
     }
   }
 }

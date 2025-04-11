@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { exhibitions, Exhibition } from '../../shared/models/Exhibition';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  exhibitions = [
-    { name: 'Ancient Egypt', image: 'images/aegypt.png' }, 
-    { name: 'Medieval Europe', image: 'images/meurope.png' },
-    { name: 'Industrial Revolution', image: 'images/irevolution.png' },
-    { name: 'World War History', image: 'images/ww2.png' }
-  ];
+  exhibitions: Exhibition[] = exhibitions;
 }

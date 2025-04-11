@@ -66,7 +66,6 @@ export class SignupComponent {
       },
       email: this.signUpForm.value.email || '',
       password: this.signUpForm.value.password || '',
-      Purchases: []
     };
 
     console.log('New user:', newUser);

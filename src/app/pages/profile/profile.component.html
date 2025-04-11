@@ -1,1 +1,23 @@
-<p>profile works!</p>
+<div class="profile-container">
+    <section class="user-info">
+        <h2>{{ user.name.firstname }} {{ user.name.lastname }}</h2>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+    </section>
+
+    @if (purchases.length > 0) {
+        <section class="purchase-history">
+            <h2>Purchase History</h2>
+            <div class="purchase-list">
+                @for (purchase of purchases; track purchase.id) {
+                    <div class="purchase-card">
+                        <h3>{{ purchase.ticket.type }} Ticket</h3>
+                        <p><strong>Date:</strong> {{ purchase.date | dateFormatter }}</p>
+                        <p><strong>Price:</strong> ${{ purchase.ticket.price }}</p>
+                    </div>
+                }
+            </div>
+        </section>
+    } @else {
+        <p>No purchases yet.</p>
+    }
+</div>

@@ -1,5 +1,3 @@
-import { Purchase } from "./Purchase";
-
 export interface User {
     name: {
       firstname: string;
@@ -7,5 +5,15 @@ export interface User {
     };
     email: string;
     password: string;
-    Purchases: Purchase[];
   }
+
+export const users: User[]=[
+  {
+    name: {
+    firstname: 'Alice',
+    lastname: 'Johnson'
+    },
+    email: 'test@gmail.com',
+    password: 'testpw'
+  }
+]

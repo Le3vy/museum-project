@@ -178,6 +178,61 @@
       }
     }
   }
+
+  .profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+  
+    h1 {
+      margin-bottom: 30px;
+      color: #7F5629; 
+    }
+  
+    .user-info {
+      margin-bottom: 40px;
+  
+      h2 {
+        margin-bottom: 10px;
+        color: #7F5629; 
+      }
+  
+      p {
+        font-size: 18px;
+        color: #7F5629; 
+      }
+    }
+  
+    .purchase-history {
+      .purchase-list {
+        display: grid;
+        gap: 20px;
+      }
+      
+      h2 {
+        margin-bottom: 10px;
+        color: #7F5629; 
+      }
+
+      .purchase-card {
+        background-color: #f1edeb;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: left;
+        color: #7F5629;
+
+        
+  
+        h3 {
+          margin-top: 0;
+          color: #7F5629;
+        }
+      }
+    }
+  }
+  
 }
 
 /* Dark Theme */
@@ -358,4 +413,59 @@
       }
     }
   }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+  
+    h1 {
+      margin-bottom: 30px;
+      color: #f3bc87; 
+    }
+  
+    .user-info {
+      margin-bottom: 40px;
+  
+      h2 {
+        margin-bottom: 10px;
+        color: #f3bc87; 
+      }
+  
+      p {
+        font-size: 18px;
+        color: #f3bc87; 
+      }
+    }
+  
+    .purchase-history {
+      .purchase-list {
+        display: grid;
+        gap: 20px;
+      }
+      
+      h2 {
+        margin-bottom: 10px;
+        color: #f3bc87; 
+      }
+      
+      .purchase-card {
+        background-color: #49320E;
+        padding: 16px;
+        border-radius: 8px;
+        text-align: left;
+        color: #f3bc87;
+
+        
+  
+        h3 {
+          margin-top: 0;
+          color: #f3bc87;
+        }
+      }
+    }
+  }
+  
 }
