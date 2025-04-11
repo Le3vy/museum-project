@@ -1,14 +1,10 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .error-message {
-    color: #f44336;
-    margin-bottom: 16px;
-  }
-  
-  
+.error-message {
+  color: #f44336;
+  margin-bottom: 16px;
+}

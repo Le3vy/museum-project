@@ -1,9 +1,4 @@
-/* These tokens are generated using https://themes.angular-material.dev/ */
-/* Preview: https://themes.angular-material.dev/?seed-error=red&seed-neutral=%237d7671&seed-neutral-variant=%23827569&seed-primary=%237d5428&seed-secondary=%23e0b770&seed-tertiary=%23c5cc8b */
-/* Seed Colors: primary: #7d5428, secondary: #e0b770, tertiary: #c5cc8b, error: red, neutral: #7d7671, neutral-variant: #827569 */
-
 @use "@angular/material" as mat;
-
 
 /* Light Theme */
 .light {
@@ -64,12 +59,25 @@
     inverse-secondary: #eac078,
     inverse-tertiary: #c5cc8b,
   ));
+
+  .signup-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 20px;
+        color: #7F5629;
+    }
+  }
+
   .login-container {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
   
     h1 {
@@ -190,12 +198,25 @@
     inverse-secondary: #78591b,
     inverse-tertiary: #5c622c,
   ));
+
+  .signup-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 20px;
+        color: #f3bc87;
+    }
+  }
+
   .login-container {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
   
     h1 {

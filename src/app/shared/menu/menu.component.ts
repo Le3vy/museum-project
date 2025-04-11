@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
+
 export class MenuComponent implements OnInit, AfterViewInit {
   @Input() sidenav!: MatSidenav;
   @Input() isLoggedIn: boolean = false;

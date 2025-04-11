@@ -25,6 +25,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
+
 export class LoginComponent {
   email = new FormControl('');
   password = new FormControl('');

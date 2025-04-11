@@ -6,4 +6,6 @@ export interface Exhibition {
     description: string;
     imageUrl: string;
     availableTickets: Ticket[];
+    startDate: Date;
+    endDate: Date;
   }

@@ -25,6 +25,7 @@ import { User } from '../../shared/models/User';
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })
+
 export class SignupComponent {
   signUpForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -65,6 +66,7 @@ export class SignupComponent {
       },
       email: this.signUpForm.value.email || '',
       password: this.signUpForm.value.password || '',
+      Purchases: []
     };
 
     console.log('New user:', newUser);

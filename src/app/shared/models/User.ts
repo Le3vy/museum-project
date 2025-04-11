@@ -1,3 +1,4 @@
+import { Purchase } from "./Purchase";
 
 export interface User {
     name: {
@@ -6,5 +7,5 @@ export interface User {
     };
     email: string;
     password: string;
-
+    Purchases: Purchase[];
   }
