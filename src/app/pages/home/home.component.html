@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div class="exhibitions-container">
+    <h1 class="page-title">Current Exhibitions</h1>
+    
+    <div class="exhibition-grid">
+      <div class="exhibition-card" *ngFor="let exhibition of exhibitions">
+        <img [src]="exhibition.image" [alt]="exhibition.name" class="exhibition-image"/>
+        <h2 class="exhibition-title">{{ exhibition.name }}</h2>
+      </div>
+    </div>
+</div>  
